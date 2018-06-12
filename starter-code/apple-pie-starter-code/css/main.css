@@ -21,6 +21,10 @@ ul {
 ul li:before {
  content: '- ';
 }
+/* Code provided for purposes of creating a custom bullet point section can
+also be used in ordered lists, we can increment counters for custom bullets in
+ordered lists.
+*/
 
 ol {
  counter-reset: custom;
@@ -33,6 +37,7 @@ ol li:before {
  content: counter(custom)') ';
  counter-increment: custom;
 }
+
 
 
 .apple-pies-image h1{
